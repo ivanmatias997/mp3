@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Esta pagina será usada para realizar un reproductor de música">
+	<meta name="author" content="Filipón Iván Matías">
+	<meta name="robots" content="index">
+	<title> Reproductor de música </title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	
+</head>
+<body>
+
+
+
+
+
+<!-- player -->
+<main class="player" id="player">
+
+	<!-- titulo -->
+	<h1 class="titulo" id="titulo">Elija una canción de la lista</h1>
+
+	<!-- image -->
+	<div class="img-vol"><img class="image" src="image/1.gif"></img>
+	<input type="range" id="volumen" class="volumen" min="0" max="1" step="0.05" disabled></div>
+	
+
+	<!-- audio -->
+	<audio  id="audio"></audio>
+
+	<!-- progress bar -->
+	<div class="progressContainer">
+		<div class="progress" id="progress"></div>
+	</div>
+
+	<!-- controls -->
+	<section class="controls" id="control" >
+		<button class="prev" id="previo" ><i class="fas fa-backward"></i></button>
+		<button class="play" ><i class="fas fa-play" id="reproducir"></i></button>
+		<button class="next" id="proximo" ><i class="fas fa-forward"></i></button>
+		
+	</section>
+
+	<!-- song list -->
+	<div class="canciones"><ul class="canciones" id="canciones"></ul></div>
+
+</main>
+
+
+
+
+<script type="text/javascript" src="codigo.js"></script>
+</body>
+
+</html>
